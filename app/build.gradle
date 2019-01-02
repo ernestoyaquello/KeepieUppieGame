@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+def currentProject = project
+
+android {
+
+    if(currentProject.hasProperty("signing.propertiesFilePath")) {
+        Properties signingInfo = new Properties()
+        signingInfo.load(new FileInputStream(file(currentProject.property("signing.propertiesFilePath"))))
+        signingConfigs {
+            release {
+                storeFile file('../signing/release.keystore')
+                storePassword signingInfo['keystore.password']
+                keyAlias signingInfo['keyAlias']
+                keyPassword signingInfo['keyPassword']
+            }
+        }
+    }
+
+    Properties adMobInfo = new Properties()
+    adMobInfo.load(new FileInputStream(file(currentProject.property("adMob.propertiesFilePath"))))
+
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.ernestoyaquello.keepieuppie"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 21
+        versionName "1.0.0-beta"
+        resValue "string", "adMobAppId", adMobInfo['adMobAppId']
+        resValue "string", "adMobPublisherId", adMobInfo['adMobPublisherId']
+        resValue "string", "adMobTestDevicesIds", adMobInfo['adMobTestDevicesIds']
+    }
+
+    buildTypes {
+
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+            debuggable true
+            resValue "string", "app_name", "@string/app_name_debug"
+            resValue "string", "adMobBannerUnitId", adMobInfo['adMobTestBannerUnitId']
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            resValue "string", "app_name", "@string/app_name_release"
+            resValue "string", "adMobBannerUnitId", adMobInfo['adMobBannerUnitId']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.gms:play-services-ads:17.0.0'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.6'
+}

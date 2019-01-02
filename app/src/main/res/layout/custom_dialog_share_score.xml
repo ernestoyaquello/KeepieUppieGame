@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:adjustViewBounds="true"
+    android:animateLayoutChanges="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/share_score_top"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:background="@drawable/ball_selection_window_background"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:weightSum="452">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="415"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/share_score_list_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share_score_list_loading"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:layout_marginBottom="@dimen/padding_normal"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/share_score_list"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarThumbVertical="@color/shareScoreListScrollbarColor"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ball_selection_bottom"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start|left"
+        android:weightSum="100">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/back_button"
+            android:layout_weight="42"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_back_selector"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/padding_small"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009b67</color>
+    <color name="colorPrimaryDark">#007a51</color>
+    <color name="colorAccent">#73d6ff</color>
+
+    <color name="scoreTextColor">#006699</color>
+    <color name="shareScoreListScrollbarColor">#713a00</color>
+</resources>

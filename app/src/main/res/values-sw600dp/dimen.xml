@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_micro">6dp</dimen>
+    <dimen name="padding_small">12dp</dimen>
+    <dimen name="padding_normal">24dp</dimen>
+    <dimen name="padding_large">36dp</dimen>
+    <dimen name="padding_extra_large">48dp</dimen>
+    <dimen name="padding_large_x2">72dp</dimen>
+    <dimen name="padding_extra_large_x2">96dp</dimen>
+    <dimen name="padding_huge">108dp</dimen>
+
+    <dimen name="main_menu_buttons_spacing">18dp</dimen>
+    <dimen name="main_menu_record_text">84sp</dimen>
+
+    <dimen name="share_score_list_item_padding">15dp</dimen>
+    <dimen name="share_score_list_item_text">24sp</dimen>
+    <dimen name="share_score_list_item_icon">30dp</dimen>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:adjustViewBounds="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/about_top"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/about_window_background"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/about_back_button"
+            android:layout_width="0dp"
+            android:layout_weight="31"
+            android:layout_height="wrap_content"
+            android:src="@drawable/about_button_back_selector"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:layout_marginEnd="@dimen/padding_normal"
+            android:layout_marginStart="@dimen/padding_small"
+            android:layout_marginLeft="@dimen/padding_small"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/about_rate_button"
+            android:layout_width="0dp"
+            android:layout_weight="31"
+            android:layout_height="wrap_content"
+            android:src="@drawable/about_button_rate_selector"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="@dimen/padding_small"
+            android:layout_marginEnd="@dimen/padding_small"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/about_bottom"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+</LinearLayout>

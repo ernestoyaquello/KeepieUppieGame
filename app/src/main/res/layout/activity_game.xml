@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/game_activity_layout">
+
+    <com.ernestoyaquello.keepieuppie.views.game.views.GameView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/game_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="100"
+        android:baselineAligned="false"
+        android:id="@+id/share_score_dialog_container">
+
+        <include layout="@layout/custom_dialog_share_score"
+            android:layout_height="wrap_content"
+            android:layout_weight="69"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/padding_huge"
+            android:layout_marginBottom="@dimen/padding_huge"
+            android:visibility="gone"
+            android:id="@+id/share_score_dialog" />
+
+    </LinearLayout>
+
+</FrameLayout>

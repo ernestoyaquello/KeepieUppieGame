@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_release">Keepie Uppie</string>
+    <string name="app_name_debug">Keepie Uppie (DEBUG)</string>
+    <string name="app_privacy_policy_url">https://sites.google.com/view/privacy-policy-keepie-uppie</string>
+    <string name="hashtag">#KeepieUppie</string>
+    <string name="share_text">I just did %1$d points in %2$s! Can you beat me? %3$s</string>
+</resources>

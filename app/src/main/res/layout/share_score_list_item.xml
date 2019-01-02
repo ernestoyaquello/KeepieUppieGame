@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/share_score_list_item_padding"
+    android:paddingStart="@dimen/share_score_list_item_padding"
+    android:paddingRight="@dimen/share_score_list_item_padding"
+    android:paddingEnd="@dimen/share_score_list_item_padding"
+    android:paddingTop="@dimen/padding_normal"
+    android:paddingBottom="@dimen/padding_normal"
+    android:background="@drawable/share_score_list_item_selector">
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="@dimen/share_score_list_item_icon"
+        android:layout_height="@dimen/share_score_list_item_icon"
+        android:layout_marginRight="@dimen/share_score_list_item_padding"
+        android:layout_marginEnd="@dimen/share_score_list_item_padding"/>
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/share_score_list_item_text"
+        android:fontFamily="@font/visitor"/>
+
+</LinearLayout>

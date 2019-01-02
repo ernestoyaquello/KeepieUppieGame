@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/exit_confirmation_window_background"
+    android:adjustViewBounds="true">
+
+    <ImageView
+        android:id="@+id/exit_confirmation_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exit_confirmation_title"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/exit_confirmation_stay_button"
+            android:layout_weight="33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/exit_confirmation_button_stay_selector"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="@dimen/padding_small"
+            android:layout_marginEnd="@dimen/padding_small"
+            android:layout_marginStart="@dimen/padding_small"
+            android:layout_marginLeft="@dimen/padding_small"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/exit_confirmation_exit_button"
+            android:layout_weight="45"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/exit_confirmation_button_exit_selector"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="@dimen/padding_small"
+            android:layout_marginEnd="@dimen/padding_small"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exit_confirmation_bottom"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/padding_small"/>
+
+</LinearLayout>

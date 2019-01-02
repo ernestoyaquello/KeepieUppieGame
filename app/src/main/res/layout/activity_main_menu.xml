@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/options_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_menu_buttons_spacing"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/options_button"
+            android:layout_width="0dp"
+            android:layout_weight="46"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_options_selector"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/play_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_above="@id/options_button_container"
+        android:visibility="invisible">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/play_button"
+            android:layout_width="0dp"
+            android:layout_weight="46"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_play_selector"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logo_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:gravity="center"
+        android:layout_above="@id/play_button_container">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/score_label_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_large"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/options_button_container"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/score_label"
+            android:layout_width="0dp"
+            android:layout_weight="32"
+            android:layout_height="wrap_content"
+            android:src="@drawable/label_record"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|top"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_marginStart="@dimen/padding_normal"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:layout_marginEnd="@dimen/padding_normal"
+        android:text="0"
+        android:textColor="@color/scoreTextColor"
+        android:layout_below="@id/score_label_container"
+        android:textSize="@dimen/main_menu_record_text"
+        android:fontFamily="@font/visitor"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/exit_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_large"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginStart="@dimen/padding_large"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/exit_button"
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_exit_selector"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:baselineAligned="false">
+
+        <include layout="@layout/custom_dialog_exit_confirmation"
+            android:id="@+id/exit_confirmation_dialog"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="85"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

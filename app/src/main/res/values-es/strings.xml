@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_release">Que No Caiga</string>
+    <string name="app_name_debug">Que No Caiga (DEBUG)</string>
+    <string name="app_privacy_policy_url">https://sites.google.com/view/privacy-policy-keepie-uppie</string>
+    <string name="hashtag">#QueNoCaiga</string>
+    <string name="share_text">¡Hice %1$d puntos en %2$s! ¿Puedes superarme? %3$s</string>
+</resources>
