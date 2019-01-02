@@ -35,10 +35,10 @@ and each one of them has several properties whose values get saved and restored 
 The state saving/restoration mechanism is also used to allow the user to pause and resume the game.
 
 ## References
-Even though many changes and improvements have been made to it, the basic game framework on top of which the game is implemented is based on the one that can be found [here](https://github.com/KamilSwojak/Ellio-android).
+Even though many changes and improvements have been made to it, the basic game framework on top of which the game is implemented is based on the one that is included as an example in the book 'The Beginner's Guide to Android Game Development', by James S. Cho.
 
 ## Disclaimer
-The code is not polished and might look far from perfect, but please keep in mind that this was my first contact with Android game development and I was just doing a little experiment to try things out on my spare time.
+The code is not polished and is far from perfect, but please keep in mind that this was my first contact with Android game development and that I was just doing a little experiment to try things out on my spare time.
 
 ## License
 ```
