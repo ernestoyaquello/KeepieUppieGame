@@ -5,7 +5,7 @@ Keepie Uppie is a casual indie Android game.
 
 The goal of the game is to keep a ball up in the air for as long as possible by tapping on it. Each tap is a point, and the game ends whenever the ball touches the floor. The highest score is always saved and displayed, and some extra balls can be unlocked as certain scores are reached.
 
-[![Keepie Uppie screenshots](https://github.com/ernestoyaquello/KeepieUppieGame/blob/master/readme/screenshots.png)](https://github.com/ernestoyaquello/KeepieUppieGame/blob/master/readme/screenshots.png)
+[![Keepie Uppie screenshots](https://github.com/ernestoyaquello/KeepieUppieGame/blob/master/readme/screenshots.png)](https://raw.githubusercontent.com/ernestoyaquello/KeepieUppieGame/master/readme/screenshots.png)
 
 Even though I only decided to publish at the end of 2018, I had actually finished its development in early 2017.
 
