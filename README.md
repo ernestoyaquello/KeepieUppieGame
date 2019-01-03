@@ -19,7 +19,7 @@ This loop takes care of updating all the values and triggering an asynchronous u
 The game view is an extension of `View` in which the `onDraw()` method has been implemented to care of drawing the whole game onto the canvas over and over again.
 
 ### Appearance
-To ensure the game looks the same in all screens and adapts to certain screen changes, the position, size and speed of all the assets are always relative to the size of the entire game view (most of these values are recalculated on each iteration of the game loop).
+To ensure the game looks the same in all screens and adapts to certain screen changes, the position, size and speed of all the assets are always relative to the size of the entire game view (many of these values are recalculated on each iteration of the game loop).
 
 ### State saving/restoration
 There are four different states:
@@ -32,7 +32,7 @@ There are four different states:
 and each one of them has several properties whose values get saved and restored whenever the user leaves the application and then goes back to it.
 
 ### Pause
-The state saving/restoration mechanism is also used to allow the user to pause and resume the game.
+Part of the state saving/restoration mechanism is also used to allow the user to pause and resume the game.
 
 ## References
 Even though many changes and improvements have been made to it, the basic game framework on top of which the game is implemented is based on the one that is included as an example in the book 'The Beginner's Guide to Android Game Development', by James S. Cho.
